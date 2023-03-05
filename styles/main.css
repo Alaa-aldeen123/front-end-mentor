@@ -1,0 +1,139 @@
+/* start glopal rules */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+/* end glopal rules */
+/* start style */
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .box {
+    height: 400px;
+    width: 300px;
+    padding: 30px 40px;
+    box-shadow: 1px 1px 5px 0px black;
+}
+.container .one {
+    text-align: center;
+    background-color: slateblue;
+    border-radius: 60px;
+    color: white;
+}
+.container h2:first-of-type {
+    margin-bottom: 50px;
+}
+.container .one .number {
+    position: relative;
+    height: 150px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .one .number::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.container .one .number div:first-of-type {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.container .one .number div:last-of-type {
+    margin-top: -60px;
+}
+.container h2:nth-of-type(2) {
+    padding: 25px;
+}
+.container p {
+    padding: 0px 25px;
+}
+.container .two {
+    left: -50px;
+    position: relative;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:992px) {
+    .container .two {
+        position: relative;
+        border-bottom-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        z-index: -1;
+        display: flex;
+        flex-wrap: wrap;
+    }  
+}
+.container .two h2 {
+    width: 90%;
+    height: 40px;
+    margin: 0 40px;
+    border-radius: 15px;
+    padding: 0 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.container .two .rec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 40px;
+    margin: 0px 20px;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.container .two .rec .text  {
+    /* left: 5px; */
+    position: relative;
+    display: flex;
+   
+}
+.container .two .rec .text svg {
+    margin-right: 10px;
+}
+.container .two .rec .text div {
+
+}
+.container .two .rec .score {
+
+}
+button {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: slateblue;
+    border: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    z-index: 2;
+    border-radius: 15px;
+    color: white;
+}
+button:hover {
+    background-color: rgb(79, 68, 157);
+    transition: 0.5s;
+}
+/* end style */
